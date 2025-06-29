@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Dispatch Monitoring System</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📑 Realtime Dispatch Monitoring System</h1>
+
+        <!-- Upload video -->
+        <h2>📁 Tải video từ máy</h2>
+        <form action="/upload_video" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit" class="btn">📤 Upload Video</button>
+        </form>
+
+        <!-- Video display -->
+        <h2>🎥 Video Đã Xử Lý</h2>
+        <div class="video-container">
+            <img src="/video_feed" alt="Streaming Video" id="video-stream">
+        </div>
+
+        <!-- Feedback form -->
+        <h2>💌 Gửi phản hồi:</h2>
+        <form action="/submit_feedback" method="post">
+            <label for="timestamp">⏱ Thời gian trong video (giây):</label>
+            <input type="number" id="timestamp" name="timestamp" required>
+
+            <label for="note">✍️ Ghi chú:</label>
+            <textarea id="note" name="note" rows="3" required></textarea>
+
+            <button type="submit" class="btn">📨 Gửi phản hồi</button>
+        </form>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
