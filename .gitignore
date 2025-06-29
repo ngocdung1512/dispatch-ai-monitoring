@@ -1,0 +1,19 @@
+# Bỏ qua video tải lên
+static/uploads/*.mp4
+
+# Bỏ qua các file video khác (nếu có)
+*.mp4
+
+# Bỏ các file mô hình nếu bạn không muốn đẩy lên
+*.pt
+
+# Bỏ các output tạm
+*.csv
+*.log
+
+# VSCode settings (nếu bạn dùng VSCode)
+.vscode/
+
+# __pycache__ và các file biên dịch Python
+__pycache__/
+*.pyc
