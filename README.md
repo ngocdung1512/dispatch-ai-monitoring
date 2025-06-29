@@ -1,4 +1,4 @@
-# 🚦 Dispatch AI Monitoring
+# 📹 Dispatch AI Monitoring
 
 A real-time web application for monitoring dispatch scenarios using YOLOv8-based object detection and classification.  
 The system allows uploading videos, live prediction, feedback collection, and user-friendly interface – all in one!
